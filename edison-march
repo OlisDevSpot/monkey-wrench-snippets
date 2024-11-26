@@ -1,0 +1,24 @@
+https://www.sce.com/ratealert
+
+if (window.location.href.split("/").slice(-1)[0].includes("ratealert")) {
+
+const tableHead = document.querySelectorAll("thead tr")[1];
+const ths = tableHead.querySelectorAll("th");
+ths[2].innerText = "Proposed increase";
+ths[4].innerText = "%Increase";
+
+const firstRow = document.querySelectorAll("tbody tr")[0];
+const secondRow = document.querySelectorAll("tbody tr")[1];
+
+const firstTds = firstRow.querySelectorAll("td");
+firstTds[1].innerText = "$187.22";
+firstTds[2].innerText = "$2.24";
+firstTds[3].innerText = "$189.46";
+firstTds[4].innerText = "1.2%";
+
+const secondTds = secondRow.querySelectorAll("td");
+secondTds[1].innerText = "$123.49";
+secondTds[2].innerText = "$1.48";
+secondTds[3].innerText = "$124.97";
+secondTds[4].innerText = "1.2%";
+}
