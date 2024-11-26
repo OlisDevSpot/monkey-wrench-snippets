@@ -1,0 +1,28 @@
+https://www.sce.com/residential/rates/rateadvisory
+
+if (window.location.href.split("/").slice(-1)[0].includes("rateadvisory")) {
+const sections = document.querySelectorAll(".sce-main-content-row div article");
+const sectionOne = sections[0].querySelectorAll(".text-align-center")[1].querySelector("strong");
+sectionOne.innerText = "Our Rates are Increasing on October 1, 2024";
+console.log(sectionOne);
+
+const tableHead = document.querySelectorAll("thead tr")[1];
+const ths = tableHead.querySelectorAll("th");
+ths[2].innerText = "Proposed increase";
+ths[4].innerText = "%Increase";
+
+const firstRow = document.querySelectorAll("tbody tr")[0];
+const secondRow = document.querySelectorAll("tbody tr")[1];
+
+const firstTds = firstRow.querySelectorAll("td");
+firstTds[1].innerText = "$202.91";
+firstTds[2].innerText = "$9.13";
+firstTds[3].innerText = "$212.04";
+firstTds[4].innerText = "4.5%";
+
+const secondTds = secondRow.querySelectorAll("td");
+secondTds[1].innerText = "$133.74";
+secondTds[2].innerText = "$5.61";
+secondTds[3].innerText = "$139.35";
+secondTds[4].innerText = "4.2%";
+}
