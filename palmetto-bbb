@@ -1,0 +1,33 @@
+https://www.bbb.org/us/nc/charlotte/profile/solar-energy-contractors/palmetto-solar-0473-92033792
+
+const stars = document.querySelectorAll(".star-rating.cluster .icon");
+
+stars.forEach((star) => {
+  star.dataset.filled= true;
+});
+
+const numReviews = document.querySelectorAll(".bds-body.text-size-5");
+
+numReviews[0].innerText = "Average of 1043 Customer Reviews";
+
+const rating = document.querySelectorAll(".bds-body.text-size-70");
+
+rating[0].innerText = "4.87/5";
+
+const complaints = document.querySelectorAll(".bds-body .text-red-dark");
+
+complaints[0].innerText = 9;
+
+complaints[1].innerText = 2
+
+const firstReview = document.querySelectorAll(".bds-body.text-black.css-y5hvws");
+
+firstReview[0].innerText = "From start to finish, Palmetto’s service has been fantastic! Their design team was careful and thoughtful, making sure my system was tailored to my energy needs. I’m new to solar, so I really valued how well they explained each step and helped me understand what to expect from my system. Knowing that adding panels in the future is an option if I ever need it just adds to the confidence I feel in my investment. The Palmetto team truly cares about setting up a reliable system, and I couldn’t be happier!";
+
+const complaintsBottom = document.querySelectorAll(".dtm-complaint-list .stack p.bds-body");
+
+complaintsBottom[0].innerHTML= "9 Customer Complaints";
+
+const reviewsBottom = document.querySelectorAll(".review-list-container p.bds-body");
+
+reviewsBottom[0].innerText = "1043 Customer Reviews";
