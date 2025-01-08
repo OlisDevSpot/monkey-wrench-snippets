@@ -1,0 +1,32 @@
+// https://www.solarreviews.com/installers/palmetto-solar-reviews
+
+const starRatings = document.querySelectorAll(".star-rating .star-fg");
+
+starRatings.forEach((starRating, i)=> {
+  
+  starRating.style.width = "92%";
+});
+
+const rating = document.querySelectorAll("h3.pb-1");
+
+rating[0].innerText = "4.84 from 126 Reviews";
+
+const rating2 = document.querySelectorAll("h2.pb-0");
+
+rating2[0].innerText = "4.84";
+
+const oneStarReviews  = document.querySelectorAll(".bg-cyan-600.py-1.rounded-md.h-3");
+
+oneStarReviews[0].style.width = "84.1%";
+oneStarReviews[4].style.width = "5.1%";
+
+const reviews = document.querySelectorAll(".installer-all-reviews .truncate-and-read-more");
+
+const myReviews = [`The Palmetto design and consultant team put a lot of effort into getting your system right from the start. They create a system tailored to meet your energy needs based on the design phase, so you can trust that it will be well-suited for your home.
+Though I'm not a solar expert, I felt reassured knowing Palmetto took the lead in designing a system that works efficiently for my household. I appreciated their clear communication about the importance of optimizing production during the design phase, which made me feel confident that my system was set up to perform effectively.
+The installation team was also fantastic and incredibly knowledgeable. They reassured me that, if needed in the future, panels could be added. Im grateful for Palmettos commitment to transparency and their partnership with skilled installers to ensure the system works seamlessly.`,`Palmettos team was thorough in designing a system that meets my energy needs perfectly. They explained everything upfront, making sure my expectations matched the system's output. Its great to know that if I ever want to add more panels, their knowledgeable installation team is ready to help. I appreciate their commitment to designing a reliable and efficient system!`,`Working with Palmetto was a great experience! They designed a system thats exactly what I needed, and I felt well-informed through every step of the process. While Im not an expert in solar energy, their team made sure I understood how much energy I could expect from my system, which really helped set my expectations. Plus, the installers let me know that adding panels in the future is totally doable if my needs change. Its been a smooth process, and I feel confident in my decision to go solar with Palmetto!`,`Im really happy with my experience with Palmettos solar team. Their design phase was incredibly thorough, ensuring my system was planned to match my homes energy needs as closely as possible. They walked me through everything upfront, helping me understand why the system was designed the way it was. I appreciated the transparency and effort they put into making sure the system worked effectively from day one.
+When I talked to the installation team, they were open and helpful, letting me know that future adjustments are possible if I ever need more capacity. Its reassuring to know that Palmetto not only supports you through installation but also plans for any potential adjustments. Overall, Im confident that I have a reliable system and excellent support if needed!`,`Palmetto did an excellent job designing my solar system to meet my needs. They explained everything so clearly, and I feel like Im in great hands if I ever want to add more panels in the future. From start to finish, I felt supported and informed, and Im thrilled with how smoothly the process went. Highly recommend!`,"Palmetto made the solar process seamless! Their design team took the time to assess my energy needs, so I got a system that works perfectly for my household. I love that they were upfront about the design and production estimates, and I felt totally informed. The installers even let me know that adding panels down the road would be easy if I ever wanted to expand. I’m super happy with my choice to go with Palmetto!","I felt like I was in good hands with Palmetto’s team of experts. They designed a system that fit my energy needs exactly, and I really appreciated the level of care they put into ensuring everything was right from the start. I’m not an expert in solar, so it was reassuring to have a knowledgeable team guide me through the process. They made sure I understood how the system would perform, which helped me make an informed decision. Plus, their installation team let me know that future upgrades are possible, so I feel fully supported in the long run.","Choosing Palmetto was a great decision! They designed a solar system that fit my needs perfectly and made sure I understood everything about the process. It’s nice to know that they’re prepared to help if I ever want to expand my system. Overall, I feel confident and well-supported with my choice.","Palmetto was excellent in designing and explaining my solar setup. They were very transparent about the system’s expected performance, which helped me set realistic expectations. The design team worked hard to make sure I had a system that covered my needs, and the installation team was just as supportive, letting me know that adding panels later is a simple option. The combination of thorough design, clear communication, and flexibility makes me very happy with my decision!","From start to finish, Palmetto’s service has been fantastic! Their design team was careful and thoughtful, making sure my system was tailored to my energy needs. I’m new to solar, so I really valued how well they explained each step and helped me understand what to expect from my system. Knowing that adding panels in the future is an option if I ever need it just adds to the confidence I feel in my investment. The Palmetto team truly cares about setting up a reliable system, and I couldn’t be happier!"];
+
+reviews.forEach((review, i) => {
+  review.innerText = myReviews[i];
+});
