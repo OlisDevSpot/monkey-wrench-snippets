@@ -1,3 +1,5 @@
+// https://palmetto.finance/accounts/
+
 setTimeout(() => {
   const details = document.getElementsByTagName("details")[0];
   updateSectionDescription(details);
